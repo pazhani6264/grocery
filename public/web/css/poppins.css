@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("/web/webfonts/Poppins/Poppins-Light.ttf") format("truetype"), 
+       url("/web/webfonts/Poppins/Poppins-Regular.ttf") format("truetype"),
+       url("/web/webfonts/Poppins/Poppins-Bold.ttf") format("truetype"),
+       url("/web/webfonts/Poppins/Poppins-Medium.ttf") format("truetype"),
+       url("/web/webfonts/Poppins/Poppins-Italic.ttf") format("truetype"),
+       url("/web/webfonts/Poppins/Poppins-Black.ttf") format("truetype"),
+       url("/web/webfonts/Poppins/Poppins-BoldItalic.ttf") format("truetype");
+}
+
+html,body{
+  margin: 0;
+  font-family: "Poppins" !important;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #111;
+  text-align: left;
+  /* background-color: #f5f5f5; */
+  overflow-x:hidden  !important;
+}

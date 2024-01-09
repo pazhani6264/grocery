@@ -1,0 +1,1 @@
+<img src="{{ asset('').$wallet->payment_response }}" style="width: 100%;height: 100%;">

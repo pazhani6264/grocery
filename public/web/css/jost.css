@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Jost";
+  src: url("/web/webfonts/Jost/Jost-Regular.ttf") format("truetype"),
+  url("/web/webfonts/Jost/Jost-SemiBold.ttf") format("truetype"),
+  url("/web/webfonts/Jost/Jost-Bold.ttf") format("truetype"),
+       url("/web/webfonts/Jost/Jost-Medium.ttf") format("truetype"),
+       url("/web/webfonts/Jost/Jost-Italic.ttf") format("truetype"),
+       url("/web/webfonts/Jost/Jost-Black.ttf") format("truetype"),
+       url("/web/webfonts/Jost/Jost-ExtraBold.ttf") format("truetype"),
+       url("/web/webfonts/Jost/Jost-BoldItalic.ttf") format("truetype");
+}
+
+
+html,body{
+  font: normal 400 0.875rem/1.86 Jost !important;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  /* font-family: "Jost" !important; */
+  /* font-size: 0.875rem; */
+  font-weight: 400;
+  line-height: 1.5;
+  color: #111;
+  text-align: left;
+  /* background-color: #f5f5f5; */
+  overflow-x:hidden  !important;
+}

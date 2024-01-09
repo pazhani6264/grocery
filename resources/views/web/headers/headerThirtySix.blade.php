@@ -1,0 +1,622 @@
+<style>
+  .header-twele .header-navbar nav .navbar-collapse ul li:last-child {
+position: relative;
+left: 0;
+margin-right: 0;
+}
+.cart-left-wishlist {
+    display: inline-block;
+    margin-right: 35px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+.product-description-20 a {
+    color: #ccc;
+    font-size: 13px;
+    font-weight: 300 !important;
+    line-height: 1.2;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.pagination {
+    
+    margin-bottom: 40px;
+}
+.badge-wishlist-33 {
+    position: absolute;
+    right: 0px;
+    top: -6px;
+    height: 15px;
+    min-width: 15px;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    right: -8px;
+}
+.header-twele .header-navbar nav .navbar-collapse ul .nav-item .nav-link {
+    text-transform: uppercase !important;
+}
+.header-fixed .header-sticky-inner nav .navbar-collapse ul .nav-item .nav-link {
+  text-transform: uppercase !important;
+}
+.active-menu-13 {
+    border-bottom: 2px solid !important;
+}
+.hover-menu-36:before {
+    bottom: 53px;
+    display: block;
+    height: 2px;
+    width: 0%;
+    content: "";
+    background-color: #b7853f;
+}
+
+.search-input-15::-webkit-input-placeholder{
+    color:#999 !important;
+}
+.search-input-15:-moz-placeholder {
+    color:#999 !important;
+}
+
+.header-12-search .search_outer_con {
+top: 38px !important;
+left: 0;
+}
+.header-12-search-fixed .search_outer_con_fixed{
+  top: 38px !important;
+  left: 0;
+}
+
+.search-input-15 {
+  padding: .9rem 4rem 1.5rem 1rem;
+  height: 38px;
+  width: 240px !important;
+  outline: none;
+  border-top: 0rem solid #ebebeb;
+  border-bottom: .1rem solid #ebebeb;
+  border-left: 0rem solid #ebebeb;
+  border-right: 0rem solid #ebebeb;
+  background-color: transparent;
+  color: #333;
+  border-radius: 0px !important;
+}
+
+
+.srach-18-butt{
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+    min-width: 2.5rem;
+    padding: 0rem 1rem;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+    z-index: 11;
+  }
+  .srach-18-main-input {
+    position: absolute;
+    right: 14rem;
+    top: 55%;
+    margin-top: -23px;
+    display: block;
+    align-items: stretch;
+    overflow: visible;
+    width: 100%;
+}
+  @media only screen and (min-width: 700px) and (max-width: 800px){
+
+  .srach-18-butt {
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+    min-width: 2.5rem;
+    padding: 0rem 1rem;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+    z-index: 11;
+    right: 20px;
+  }
+  .srach-18-main-input {
+      position: absolute;
+      right: 19.5rem;
+      top: 50%;
+      margin-top: -23px;
+      display: block;
+      align-items: stretch;
+      overflow: visible;
+      width: 100%;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 1024px){
+
+  .img-fluid-molla-main-36 {
+    border: 0px solid;
+    width: 120px !important;
+    height: 130px;
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 600px){
+
+  .img-fluid-molla-main-36 {
+    border: 0px solid;
+    width: 140px;
+    height: 130px;
+    display: inline-block;
+  }
+  .col-6 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+}
+
+.sticky-header .header-sticky-inner .pro-header-right-options li {
+    margin-left: 0px !important;
+}
+
+.active-menu-13{
+  color:#000 !important;
+}
+.hover-menu-36:before {
+bottom: 53px;
+display: block;
+height: 2px;
+width: 0%;
+content: "";
+background-color: #000;
+}
+.header-twele .header-navbar nav .navbar-collapse ul .nav-item .nav-link:hover {
+color: #000 !important;
+}
+.header-fixed .header-sticky-inner nav .navbar-collapse ul .nav-item  .nav-link:hover {
+color: #000 !important;
+}
+
+.tp1-main .btns .active {
+border-bottom: 1px solid #c96;
+color: #fff;
+}
+</style>
+
+
+<!-- //header style Twele -->
+@include('web.headers.fixedHeader36') 
+<header id="headerTwele" class="header-12-search header-area header-twele  header-desktop d-none d-lg-block d-xl-block">
+
+
+<!-- <div class="header-mini bg-top-bar-11">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-12">
+          <nav id="navbar_0_6" class="navbar navbar-expand-md navbar-dark navbar-0">
+
+            <ul class="navbar-nav">
+              <li class="nav-item mr-20">
+                <a class="color-16-top" href="tel:{{$result['commonContent']['setting'][11]->value}}">
+                  <i class="fa fa-phone"></i>&nbsp;&nbsp;CALL : {{$result['commonContent']['setting'][11]->value}}</li>
+                </a>
+              </li>
+            </ul>
+
+                           
+            <div class="navbar-collapse">
+              
+              <div class="navbar-lang">
+                @if(count($languages) > 1)
+                  <div class="dropdown" style="margin-right:0px;margin-left:20px;">
+                      <button class="btn dropdown-toggle color-16-top" type="button" >
+                        {{	session('language_name')}}
+                      </button>
+                      <div class="dropdown-menu" >
+                        @foreach($languages as $language)
+                        <a onclick="myFunction1({{$language->languages_id}})" class="dropdown-item" href="#">                      
+                          {{$language->name}}
+                        </a>                   
+                        @endforeach                   
+                      </div>
+                  </div> 
+                
+                  @include('web.common.scripts.changeLanguage')
+                @endif
+                @if(count($currencies) > 1)
+                  <div class="dropdown" style="margin-right:0px;margin-left:30px;">
+                    <button class="btn dropdown-toggle color-16-top" type="button" >
+                      {{session('currency_code')}}
+                    </button>
+                    <div class="dropdown-menu">
+                      @foreach($currencies as $currency)
+                      <a onclick="myFunction2({{$currency->id}})" class="dropdown-item" href="#">
+                        <span>{{$currency->code}}</span>   
+                      </a>
+                      @endforeach
+                    </div>
+                  </div>
+                  @include('web.common.scripts.changeCurrency')
+                @endif
+              </div>  
+              <ul class="navbar-nav">
+                
+              <?php if(auth()->guard('customer')->check() &&  auth()->guard('customer')->user()->phone_verified== '1'){ ?>
+                <li class="nav-item" style="margin-left:30px;"> <a class="color-16-top" href="{{url('profile')}}" class="nav-link">@lang('website.Profile')</a> </li>
+
+                  <li class="nav-item" style="margin-left:30px;"> <a class="color-16-top" href="{{url('compare')}}" class="nav-link">@lang('website.Compare')&nbsp;(<span id="compare">{{$count}}</span>)</a> </li>
+                  <li class="nav-item" style="margin-left:30px;"> <a class="color-16-top" href="{{url('orders')}}" class="nav-link">@lang('website.Orders')</a> </li>
+                  <li class="nav-item" style="margin-left:30px;"> <a class="color-16-top" href="{{url('shipping-address')}}" class="nav-link">@lang('website.Shipping Address')</a> </li>
+                  <li class="nav-item" style="margin-left:30px;"> <a class="color-16-top" href="{{url('logout')}}" class="nav-link">@lang('website.Logout')</a> </li>
+                  <?php }else{ ?>
+                   
+                    <?php
+                    if($result['commonContent']['settings']['view_login_button'] == 1){ 
+                      $loginID = DB::table('current_theme')->first();
+                      if($loginID->login == 4) {
+                    ?>
+                      <li class="nav-item login_modal" style="margin-left:30px;cursor:pointer"><a class="color-16-top">Sign In / Sign Up</a></li>    
+                    <?php } else if($loginID->login == 5){ ?>
+                      <li class="nav-item login_modal1" style="margin-left:30px;cursor:pointer"><a class="color-16-top">Sign In / Sign Up</a></li>    
+                    <?php } else if($loginID->login == 6){ ?>
+                      <li class="nav-item login_modal2" style="margin-left:30px;cursor:pointer"><a class="color-16-top">Sign In / Sign Up</a></li>    
+                    <?php } else if($loginID->login == 7){ ?>
+                      <li class="nav-item login_modal3" style="margin-left:30px;cursor:pointer"><a class="color-16-top">Sign In / Sign Up</a></li>
+                    <?php } else if($loginID->login == 8){ ?>
+                      <li class="nav-item login_modal4" style="margin-left:30px;cursor:pointer"><a class="color-16-top">Sign In / Sign Up</a></li>     
+                    <?php } else { ?>
+                       <li class="nav-item" style="margin-left:30px;"> <a class="color-16-top" href="{{ URL::to('/login')}}">Sign In / Sign Up</a> </li>      
+                    <?php } ?>                  
+                  <?php } }?>
+              </ul> 
+
+
+            </div>   
+          </nav>
+        </div>
+      </div>
+    </div> 
+  </div> -->
+
+  
+  <div class="header-maxi  bg-header-bar header-maxi-twele" style="height: 160px; padding:0px !important">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+
+      <div class="col-12 col-sm-5">
+      <div class="header-navbar">
+            <div class="">
+            <nav id="navbar_header_9" class="navbar navbar-expand-lg">
+                
+                <div class="navbar-collapse" >
+                  <ul class="navbar-nav">
+                  <?php 
+                    $items = DB::table('menus')
+                    ->leftJoin('menu_translation', 'menus.id', '=', 'menu_translation.menu_id')
+                    ->select('menus.*', 'menu_translation.menu_name as name', 'menus.parent_id','menus.id')
+                    ->where('menu_translation.language_id', '=', Session::get('language_id'))
+                    ->where('menus.status', 1)
+                    ->where('menus.parent_id', 0)
+                    ->orderBy('menus.sort_order', 'ASC')
+                    ->get();
+                      
+                      if($items->isNotEmpty()) {
+                        foreach ($items->slice(0, 3) as $item) {
+
+                          if ($item->type == 0) {
+                             $link = ' target="_blank" href="' . $item->link . '"';
+                      $menuactive = '';
+                          } elseif ($item->type == 1) {
+                              if($item->link == '/'){
+                                  $link = ' href="' . url(''). $item->link . '"';
+                                  $menuactive = 'home';
+                              }else{
+                                  $link = ' href="' . url(''). '/' .$item->link . '"';
+                                  $menuactive = $item->link;
+                              }
+                          } elseif ($item->type == 2) {
+                              $link = ' href="' . url('page?name=') . $item->link . '"';
+                              $menuactive = $item->link;
+                          } elseif ($item->type == 3) {
+                              $link = ' href="' . url('shop?category=') . $item->link . '"';
+                              $menuactive = $item->link;
+                          } elseif ($item->type == 4) {
+                              $link = ' href="' . url('product-detail')  .'/'.  $item->link . '"';
+                              $menuactive = $item->link;
+                          } elseif ($item->type == 5) {
+                              $link = ' href="' . url('') . '/' . $item->link . '"';
+                              $menuactive = $item->link;
+                          }else{
+                              $link = '#';
+                              $menuactive = '';
+                          }
+
+                          $childs = DB::table('menus')
+                          ->leftJoin('menu_translation', 'menus.id', '=', 'menu_translation.menu_id')
+                          ->select('menus.*', 'menu_translation.menu_name as name', 'menus.parent_id')
+                          ->where('menu_translation.language_id', '=', Session::get('language_id'))
+                          ->where('menus.status', 1)
+                          ->where('menus.parent_id', $item->id)
+                          ->orderBy('menus.sort_order', 'ASC')
+                          ->get();
+                      
+                      ?> 
+                        <li class="nav-item dropdown menu-active-13-{{ $menuactive }} hover-menu-36" style="padding:53px 0px;">
+                          <a class="nav-link menu-11-color font-500" <?php echo $link; ?>>{{ $item->name }} <?php  if ($childs->isNotEmpty()){?> <i class="fa fa-angle-down"></i> <?php } ?></a>
+                        
+                          <?php if ($childs->isNotEmpty()) { ?>
+                            <div class="dropdown-menu">
+                              <?php                       
+                                foreach ($childs as $child) {
+
+                                  if ($child->type == 0) {
+                                      $sublink = ' target="_blank" href="' . $child->link . '"';
+                                  } elseif ($child->type == 1) {
+                                      $sublink = ' href="' . url($child->link) . '"';
+                                  } elseif ($child->type == 2) {
+                                      $sublink = ' href="' . url('page?name=') . $child->link . '"';
+                                  } elseif ($child->type == 3) {
+                                      $sublink = ' href="' . url('shop?category=') . $child->link . '"';
+                                  } elseif ($child->type == 4) {
+                                      $sublink = ' href="' . url('product-detail')  .'/'.  $child->link . '"';
+                                  } elseif ($child->type == 5) {
+                                      $sublink = ' href="' . url('') . $child->link . '"';
+                                  }
+                                  
+                                  $childs1 = DB::table('menus')
+                                  ->leftJoin('menu_translation', 'menus.id', '=', 'menu_translation.menu_id')
+                                  ->select('menus.*', 'menu_translation.menu_name as name', 'menus.parent_id')
+                                  ->where('menu_translation.language_id', '=', Session::get('language_id'))
+                                  ->where('menus.status', 1)
+                                  ->where('menus.parent_id', $child->id)
+                                  ->orderBy('menus.sort_order', 'ASC')
+                                  ->get();
+                              ?> 
+                              <div class="dropdown-submenu submenu1">
+                                <a class="dropdown-item"  <?php echo $sublink; ?>>
+                                  {{ $child->name }} <i class="<?php if ($childs1->isNotEmpty()) { ?>fa fa-angle-right<?php } ?>" style="float:right;margin-top:4px;"></i></a>
+                                    <?php 
+                                      if ($childs1->isNotEmpty()) { 
+                                    ?>
+                                    <div class="dropdown-menu">
+                                    <?php
+                                         foreach ($childs1 as $child1) {
+
+                                          if ($child1->type == 0) {
+                                              $sublink1 = ' target="_blank" href="' . $child1->link . '"';
+                                          } elseif ($child1->type == 1) {
+                                              $sublink1 = ' href="' . url($child1->link) . '"';
+                                          } elseif ($child1->type == 2) {
+                                              $sublink1 = ' href="' . url('page?name=') . $child1->link . '"';
+                                          } elseif ($child1->type == 3) {
+                                              $sublink1 = ' href="' . url('shop?category=') . $child1->link . '"';
+                                          } elseif ($child1->type == 4) {
+                                              $sublink1 = ' href="' . url('product-detail') .'/'. $child1->link . '"';
+                                          } elseif ($child1->type == 5) {
+                                              $sublink1 = ' href="' . url('') . $child1->link . '"';
+                                          }
+                                      ?>
+                                        <div class="dropdown-submenu submenu1">
+                                          <a class="dropdown-item" dropdown-toggle="" <?php echo $sublink1; ?>>{{ $child1->name }}<span style="float:right"></span></a>
+                                        </div>
+                                      <?php } ?>
+                                    </div>
+                                  <?php } ?>
+                                </div>
+                              <?php } ?>
+                            </div>
+                            <?php } ?>
+                        </li>  
+
+                  
+                        
+                      <?php }} if(count($items) > 3){?>
+
+                        <li class="nav-item dropdown  hover-menu-36" style="padding:53px 0px;">
+                          <a style="white-space:nowrap" class="nav-link  menu-11-color font-500" href="#">More <i class="fa fa-angle-down"></i></a>
+                            <div class="dropdown-menu">
+                            <?php
+                                if($items->isNotEmpty()) {
+                                  foreach ($items as $key=>$item) {
+                                    if($key > 2){ 
+          
+                                    if ($item->type == 0) {
+                                       $link = ' target="_blank" href="' . $item->link . '"';
+                      $menuactive = '';
+                                    } elseif ($item->type == 1) {
+                                        if($item->link == '/'){
+                                            $link = ' href="' . url(''). $item->link . '"';
+                                            $menuactive = 'home';
+                                        }else{
+                                            $link = ' href="' . url(''). '/' .$item->link . '"';
+                                            $menuactive = $item->link;
+                                        }
+                                    } elseif ($item->type == 2) {
+                                        $link = ' href="' . url('page?name=') . $item->link . '"';
+                                        $menuactive = $item->link;
+                                    } elseif ($item->type == 3) {
+                                        $link = ' href="' . url('shop?category=') . $item->link . '"';
+                                        $menuactive = $item->link;
+                                    } elseif ($item->type == 4) {
+                                        $link = ' href="' . url('product-detail')  .'/'.  $item->link . '"';
+                                        $menuactive = $item->link;
+                                    } elseif ($item->type == 5) {
+                                        $link = ' href="' . url('') . '/' . $item->link . '"';
+                                        $menuactive = $item->link;
+                                    }else{
+                                        $link = '#';
+                                        $menuactive = '';
+                                    }
+
+                                    $childs1 = DB::table('menus')
+                                    ->leftJoin('menu_translation', 'menus.id', '=', 'menu_translation.menu_id')
+                                    ->select('menus.*', 'menu_translation.menu_name as name', 'menus.parent_id')
+                                    ->where('menu_translation.language_id', '=', Session::get('language_id'))
+                                    ->where('menus.status', 1)
+                                    ->where('menus.parent_id', $item->id)
+                                    ->orderBy('menus.sort_order', 'ASC')
+                                    ->get();
+          
+                              ?>
+                              <div class="dropdown-submenu submenu1">
+                                <a class="dropdown-item"  <?php echo $link; ?>>
+                                  {{ $item->name }} <i class="<?php if ($childs1->isNotEmpty()) { ?> fa fa-angle-right<?php } ?>" style="float:right;margin-top:4px;"></i></a>
+                                    <?php 
+                                    if ($childs1->isNotEmpty()) { 
+                                    ?>
+                                    <div class="dropdown-menu more">
+                                    <?php
+                                          foreach ($childs1 as $child1) {
+
+                                            if ($child1->type == 0) {
+                                                $sublink1 = ' target="_blank" href="' . $child1->link . '"';
+                                            } elseif ($child1->type == 1) {
+                                                $sublink1 = ' href="' . url($child1->link) . '"';
+                                            } elseif ($child1->type == 2) {
+                                                $sublink1 = ' href="' . url('page?name=') . $child1->link . '"';
+                                            } elseif ($child1->type == 3) {
+                                                $sublink1 = ' href="' . url('shop?category=') . $child1->link . '"';
+                                            } elseif ($child1->type == 4) {
+                                                $sublink1 = ' href="' . url('product-detail') .'/'. $child1->link . '"';
+                                            } elseif ($child1->type == 5) {
+                                                $sublink1 = ' href="' . url('') . $child1->link . '"';
+                                            }
+                                      ?>
+                                        <div class="dropdown-submenu submenu1">
+                                          <a class="dropdown-item" dropdown-toggle="" <?php echo $sublink1; ?>>{{ $child1->name }}<span style="float:right"></span></a>
+                                        </div>
+                                      <?php } ?>
+                                    </div>
+                                  <?php } ?>
+                                </div>
+                                <?php } } }?>
+                            </div>
+                    <?php  }?> 
+                  </ul>
+                </div>
+              </nav>
+            </div> 
+          </div> 
+        </div>
+
+
+            <div class="col-12 col-md-2 col-lg-2 margin-auto">
+          <a class="img-fluid-molla-main-36" href="{{ URL::to('/')}}" class="logo" data-toggle="" data-placement="bottom" title="@lang('website.logo')">
+            @if($result['commonContent']['settings']['sitename_logo']=='name')
+            <?=stripslashes($result['commonContent']['settings']['website_name'])?>
+            @endif
+        
+            @if($result['commonContent']['settings']['sitename_logo']=='logo')
+              <?php 
+              $imagepath = DB::table('image_categories')->where('path', '=', $result['commonContent']['settings']['website_logo'])->where('image_type', 'ACTUAL')->select('path_type')->first(); 
+
+              ?>
+              @if($imagepath->path_type == 'aws')
+                <img class="img-fluid-molla-36" src="{{$result['commonContent']['settings']['website_logo']}}" alt="<?=stripslashes($result['commonContent']['settings']['website_name'])?>">
+              @else
+                <img class="img-fluid-molla-36" src="{{asset('').$result['commonContent']['settings']['website_logo']}}" alt="<?=stripslashes($result['commonContent']['settings']['website_name'])?>">
+              @endif
+            @endif
+            </a>
+        </div>
+
+        <div class="col-12 col-sm-5" style="text-align:right">
+
+        <form class="form-inline-search" action="{{ URL::to('/shop')}}" method="get" style="display:inline-block;position:relative">
+
+                <button id="dropdownCartButton" class="btn srach-18-butt" type="submit"> 
+                <svg id="search" class="us-style-search-36 common-fill-hover color-fill" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 27 27">
+  <g id="Layer_1" data-name="Layer 1" transform="translate(0 0)">
+    <path id="Path_55427" data-name="Path 55427" d="M.216,25.052l6.72-6.72a11.27,11.27,0,1,1,1.591,1.591l-6.72,6.72A1.127,1.127,0,0,1,.216,25.052Zm15.427-4.833a9.007,9.007,0,1,0-9-9,9.007,9.007,0,0,0,9,9Z" transform="translate(0.07 0.07)"/>
+  </g>
+</svg>
+               
+                    </button>
+             
+                  
+                        <input type="hidden" class="category-value" name="categories_id" value="" /> 
+                        <div class="input-main srach-18-main-input" id="searchbutton">
+                            <input autocomplete="off" required name="search" value="{{ app('request')->input('search') }}"  type="text" class="search-input-15 typeheads" placeholder="Search Product ..... ">
+                            <div class="search_outer_con search_outer_con_18" style="text-align:left">
+                                <div id="viewsearchproduct"></div>
+                            </div>
+                        </div>
+                       
+                    </form>
+               
+                    <?php if(auth()->guard('customer')->check() &&  auth()->guard('customer')->user()->phone_verified== '1'){ ?>
+
+<a href="{{ URL::to('/wishlist')}}">
+  <?php } else {?>
+    <?php 
+    $loginID = DB::table('current_theme')->first();
+    if($loginID->login == 4) {
+  ?>
+    <a class="login_modal" style="cursor:pointer"> 
+  <?php } else if($loginID->login == 5){ ?>
+    <a class="login_modal1" style="cursor:pointer">     
+  <?php } else if($loginID->login == 6){ ?>
+    <a class="login_modal2" style="cursor:pointer">   
+  <?php } else if($loginID->login == 7){ ?>
+    <a class="login_modal3" style="cursor:pointer"> 
+  <?php } else if($loginID->login == 8){ ?>
+    <a class="login_modal4" style="cursor:pointer"> 
+  <?php } else { ?>
+    <a href="{{ URL::to('/wishlist')}}"> 
+  <?php } ?>
+    <?php }?>
+                      <div class="pro-header-right-options display-inline cart-left-wishlist cart-left-wishlist-11 text-center margin-left-32 common-fill-hover color-fill" style="margin-right:30px !important;margin-left:10px !important;vertical-align: baseline;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48.232 41.342">
+                      <g id="wishlist" transform="translate(0 -36.545)">
+                        <path id="Path_55409" data-name="Path 55409" d="M44.814,39.883q-3.419-3.338-9.447-3.338a10.733,10.733,0,0,0-3.4.578,13.76,13.76,0,0,0-3.229,1.561q-1.494.982-2.571,1.844a24.872,24.872,0,0,0-2.045,1.83,24.905,24.905,0,0,0-2.046-1.83q-1.077-.861-2.571-1.844a13.779,13.779,0,0,0-3.23-1.561,10.736,10.736,0,0,0-3.4-.578q-6.029,0-9.447,3.338T0,49.141a11.791,11.791,0,0,0,.633,3.714,16.292,16.292,0,0,0,1.44,3.257A23.82,23.82,0,0,0,3.9,58.736Q4.926,60.014,5.4,60.5a8.916,8.916,0,0,0,.74.7L22.932,77.4a1.689,1.689,0,0,0,2.369,0l16.768-16.15q6.164-6.163,6.164-12.111Q48.232,43.219,44.814,39.883Zm-5.087,18.84L24.116,73.768,8.479,58.7q-5.033-5.032-5.033-9.555a11.735,11.735,0,0,1,.578-3.849A7.518,7.518,0,0,1,5.5,42.641a7.11,7.11,0,0,1,2.194-1.6,9.725,9.725,0,0,1,2.53-.834,15.416,15.416,0,0,1,2.638-.215,7.741,7.741,0,0,1,3.015.686A13.761,13.761,0,0,1,18.854,42.4q1.359,1.037,2.329,1.938A20.908,20.908,0,0,1,22.8,45.992a1.764,1.764,0,0,0,2.638,0,20.851,20.851,0,0,1,1.615-1.655q.969-.9,2.328-1.938a13.757,13.757,0,0,1,2.975-1.722,7.74,7.74,0,0,1,3.015-.686A15.419,15.419,0,0,1,38,40.205a9.714,9.714,0,0,1,2.53.834,7.11,7.11,0,0,1,2.193,1.6,7.518,7.518,0,0,1,1.481,2.651,11.745,11.745,0,0,1,.578,3.849Q44.787,53.663,39.727,58.723Z" transform="translate(0 0)" />
+                      </g>
+                    </svg>
+                        <span class="total_wishlist badge badge-secondary badge-wishlist-33">{{ $result['commonContent']['total_wishlist'] }}</span>
+                      </div>
+                    </a>
+
+                    @if($result['commonContent']['settings']['view_cart_button'] == 1)
+
+                  <ul class="pro-header-right-options display-inline header-36-cart-drop common-hover common-fill-hover color-fill" style="vertical-align: middle;">
+                    <li class="dropdown head-cart-content" style="margin-left: 2px !important;">
+                      @include('web.headers.cartButtons.cartButton36')
+                    </li>
+                  </ul>
+
+                  @endif
+                </div>
+
+
+            
+    </div>
+
+
+      </div>
+    </div> 
+  </div> 
+
+      <div class="header-navbar bg-menu-bar">
+          <div class="container">
+            <nav id="navbar_header_9" class="navbar navbar-expand-lg  bg-nav-bar">
+        
+              <div class="navbar-collapse" >
+                <ul class="navbar-nav">
+                  <!-- {!! $result['commonContent']["menusRecursive"] !!} -->
+                  <!-- <li class="nav-item ">
+                    <a class="nav-link">
+                        <span>@lang('website.Call Us Now')</span>
+                        <phone dir="ltr">{{$result['commonContent']['setting'][11]->value}}</phone>
+                    </a>
+                  </li>      -->
+                </ul>
+              </div>
+            </nav>
+          </div>
+      </div>
+</header>
+

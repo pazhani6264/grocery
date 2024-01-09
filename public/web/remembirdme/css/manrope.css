@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Manrope";
+  src: url("/web/webfonts/Manrope/Manrope-Regular.ttf") format("truetype"),
+       url("/web/webfonts/Manrope/Manrope-Bold.ttf") format("truetype"),
+       url("/web/webfonts/Manrope/Manrope-Medium.ttf") format("truetype"),
+       url("/web/webfonts/Manrope/Manrope-Italic.ttf") format("truetype"),
+       url("/web/webfonts/Manrope/Manrope-SemiBold.ttf") format("truetype"),
+       url("/web/webfonts/Manrope/Manrope-ExtraBold.ttf") format("truetype");
+}
+
+html,body{
+  margin: 0;
+  font-family: "Manrope", sans-serif !important;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #111;
+  text-align: left;
+  /* background-color: #f5f5f5; */
+}

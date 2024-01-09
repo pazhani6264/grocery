@@ -1,0 +1,26 @@
+.ticket-common-bg {
+  color: #212529;
+  background-color: #5fcbc4;
+  border-color: #5fcbc4;
+}
+
+.btn-secondary {
+  color: #212529;
+  background-color: #5fcbc4;
+  border-color: #5fcbc4;
+}
+
+.btn-secondary:hover {
+  color: #212529;
+  background-color: #42c2b9;
+  border-color: #3dbab2;
+}
+
+.btn-secondary:focus,
+.btn-secondary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(86, 178, 173, 0.5);
+}
+.ticket-card {
+  border-top: 5px solid #5fcbc4 !important;
+}
+

@@ -1,0 +1,14 @@
+.demo-34-s-container
+{
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+}
+.demo-34-s-label-color
+{
+    color: #7490da !important;
+}
+
+@media only screen and (max-width: 768px)
+{
+
+}

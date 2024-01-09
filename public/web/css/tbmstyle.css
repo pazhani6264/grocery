@@ -1,0 +1,146 @@
+.product-based-cat-2 {
+    margin-top:60px;
+}
+
+.product-based-cat-2:first-of-type {
+  margin-top:30px;
+}
+.product-based-cat-2 .pbc-2-outer-pad {
+    padding: 0 40px;
+}
+.product-based-cat-2 .pbc-2-header
+{
+  margin-bottom:40px;
+  display: flex;
+    align-items: center;
+}
+.product-based-cat-2 .pbc-2-title {
+    margin-bottom: 0;
+    flex: 1 1 auto;
+}
+
+.product article .thumb .img-fluid {
+    margin-left: auto;
+    margin-right: auto;
+    height: 230px;
+    object-fit: contain;
+}
+.product-molla-19 .content {
+    height: auto !important;
+}
+.ajax_product_45 .pbc-2-pr-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.product-based-cat-2 .pbc-2-link {
+  margin-top: 0;
+    flex: 0 1 auto;
+    margin-top: 15px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    white-space: nowrap;
+    color: #000;
+}
+
+/* blog 5-8-2022 */
+.blog-2 {
+    margin-top:30px;
+}
+.blog-2 .blog-2-outer-pad {
+    padding: 0 40px;
+}
+.blog-2 .blog-2-header
+{
+  margin-bottom:40px;
+  display: flex;
+    align-items: center;
+}
+.blog-2 .blog-2-title {
+    margin-bottom: 0;
+    flex: 1 1 auto;
+}
+.blog-2 .blog-2-link {
+    margin-top: 0;
+      flex: 0 1 auto;
+      margin-top: 15px;
+      font-weight: 700;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      white-space: nowrap;
+      color: #000;
+  }
+
+
+/* end blog */
+
+
+@media only screen and (max-width: 768px)
+{
+
+.product-based-cat-2 .pbc-2-outer-pad {
+    padding: 0 20px;
+}
+.product-based-cat-2 .pbc-2-header
+{
+  margin-bottom:30px;
+}
+.product-based-cat-2:first-of-type {
+    margin-top: 10px;
+}
+.product-based-cat-2 {
+    margin-top: 30px;
+}
+.product-based-cat-2 .pbc-2-link {
+
+    margin-top: 0px;
+   
+}
+.product-based-cat-2 .pbc-2-title {
+    font-size: 18px;
+}
+/* blog 5-8-2022 */
+.blog-2 {
+    margin-top:10px;
+}
+.blog-2 .blog-2-outer-pad {
+    padding: 0 20px;
+}
+.blog-2 .blog-2-header
+{
+  margin-bottom:30px;
+}
+.blog-2 .blog-2-link {
+
+    margin-top: 0px;
+   
+}
+.blog-2 .blog-2-title {
+    font-size: 18px;
+}
+
+/* blog end */
+}
+
+@media only screen and (max-width: 600px)
+{
+
+
+.product-based-cat-2 .pbc-2-title {
+    font-size: 16px;
+}
+.product-based-cat-2 .pbc-2-outer-pad {
+    padding: 0 15px;
+}
+
+/* blog 5-8-2022 */
+.blog-2 .blog-2-outer-pad {
+    padding: 0 15px;
+}
+.blog-2 .blog-2-title {
+    font-size: 16px;
+}
+
+/* blog end */
+}

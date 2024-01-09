@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("/web/webfonts/Open_Sans/OpenSans-Regular.ttf") format("ttf"),
+       url("/web/webfonts/Open_Sans/OpenSans-Bold.ttf") format("ttf"),
+       url("/web/webfonts/Open_Sans/OpenSans-SemiBold.ttf") format("ttf"),
+       url("/web/webfonts/Open_Sans/OpenSans-Italic.ttf") format("ttf"),
+       url("/web/webfonts/Open_Sans/OpenSans-ExtraBold.ttf") format("ttf"),
+       url("/web/webfonts/Open_Sans/OpenSans-BoldItalic.ttf") format("ttf");
+}
+
+html,body{
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #111;
+  text-align: left;
+  /* background-color: #f5f5f5; */
+}

@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url("/web/webfonts/Helvetica/Helvetica.ttf") format("ttf"),
+       url("/web/webfonts/Helvetica/Helvetica-Bold.ttf") format("ttf"),
+       url("/web/webfonts/Helvetica/Helvetica-BoldOblique.ttf") format("ttf"),
+       url("/web/webfonts/Helvetica/Helvetica-Oblique.ttf") format("ttf"),
+       url("/web/webfonts/Helvetica/helvetica-rounded-bold-5871d05ead8de.ttf") format("ttf"),
+       url("/web/webfonts/Helvetica/helvetica-compressed-5871d14b6903a.ttf") format("ttf");
+}
+
+html,body{
+  margin: 0;
+  font-family: "Helvetica" !important;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #111;
+  text-align: left;
+  /* background-color: #f5f5f5; */
+  overflow-x:hidden  !important;
+}
